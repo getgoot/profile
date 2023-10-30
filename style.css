@@ -1,0 +1,160 @@
+/* Default styles for laptops and larger screens */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.profile {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 8px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 50px auto;
+  max-width: 50vh;
+  height: 100vh;
+}
+
+.profile img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.profile h1 {
+  font-size: 30px;
+
+}
+
+.profile h2 {
+  color: #666;
+  font-size: 20px;
+
+}
+
+.profile p {
+  margin-top: 20px;
+  font-size: 1.3vw;
+
+}
+
+.profile > img {
+  height: 20%;
+  object-fit: contain;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  margin-top: 5px;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 250px;
+  height: 25vh;
+}
+
+.skill {
+  height: 50%;
+  aspect-ratio: 1;
+  margin: 5px;
+  text-align: center;
+}
+
+.skill img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.contact-button {
+  background-color: #0074cc;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.contact-button:hover .email-tooltip {
+  background-color: black;
+}
+
+.contact-button:hover::after {
+  content: "elliotg283@gmail.com";
+}
+.email-tooltip {
+  position: absolute;
+  background: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: none;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Media query for smartphones and smaller screens */
+@media (min-width: 600px) {
+  body {
+    align-items: flex-start;
+    background-color: black;
+  }
+
+  .profile {
+    width: 100%;
+    margin: 0;
+  }
+
+  .skills ul {
+    max-width: none;
+  }
+}
+
+.link-in {
+  background-color: #0074cc;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.Linked-in-Link {
+  position: absolute;
+  background: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: none;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.link-in:hover .Linked-in-Link{
+  background-color: black;
+}
+
+.link-in:hover::after {
+  content: "www.linkedin.com/in/elliot-griffin-33332b169";
+}
